@@ -1,0 +1,190 @@
+IQ-TREE version 3.1.3 for Linux x86 64-bit built Jul 26 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-54P5NM2 (AVX2, FMA3, 15 GB RAM)
+Command: iqtree -s LcCIPK_kinase_NAF.trim.fa -m MFP -bb 1000 -alrt 1000 -nt AUTO -pre LcCIPK_kinase_NAF
+Seed:    960794 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Sep 24 16:50:13 2026
+Kernel:  AVX+FMA - auto-detect threads (28 CPU cores detected)
+
+Reading alignment file LcCIPK_kinase_NAF.trim.fa ... Fasta format detected
+Reading fasta file: done in 7.89165e-05 secs using 100.1% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000411987 secs using 2392% CPU
+Alignment has 27 sequences with 285 columns, 267 distinct patterns
+196 parsimony-informative, 38 singleton sites, 51 constant sites
+          Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.004318 secs using 2801% CPU
+   1  LcCIPK1     0.70%    passed     96.16%
+   2  LcCIPK2    21.40%    passed     91.47%
+   3  LcCIPK3     0.70%    passed     99.90%
+   4  LcCIPK4     1.05%    passed     98.38%
+   5  LcCIPK5     1.05%    passed     95.77%
+   6  LcCIPK6     0.70%    passed     98.32%
+   7  LcCIPK7     0.70%    passed    100.00%
+   8  LcCIPK8     0.35%    passed     86.09%
+   9  LcCIPK9     1.05%    passed     99.86%
+  10  LcCIPK10    0.70%    passed     92.11%
+  11  LcCIPK11   51.93%    passed     49.07%
+  12  LcCIPK12    0.70%    passed     98.44%
+  13  LcCIPK13    1.05%    passed     99.36%
+  14  LcCIPK14    0.70%    passed     99.90%
+  15  LcCIPK15    1.05%    passed     99.42%
+  16  LcCIPK16    1.40%    passed     99.90%
+  17  LcCIPK17    0.70%    passed     96.19%
+  18  LcCIPK18    0.70%    passed     97.61%
+  19  LcCIPK19    1.05%    passed     84.23%
+  20  LcCIPK20    1.05%    passed     73.08%
+  21  LcCIPK21    1.05%    passed     99.71%
+  22  LcCIPK22   52.98%    passed     61.60%
+  23  LcCIPK23    0.35%    passed     99.31%
+  24  LcCIPK24    1.40%    passed     99.69%
+  25  LcCIPK25   48.42%    passed     82.84%
+  26  LcCIPK26    1.05%    passed     99.45%
+  27  LcCIPK27    0.70%    passed     98.77%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL       7.21%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 0.000653028 secs using 2686% CPU
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+Measuring multi-threading efficiency up to 28 CPU cores
+Increase to 10 rounds for branch lengths
+348 trees examined
+Threads: 1 / Time: 28.063 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -8684
+Threads: 2 / Time: 16.037 sec / Speedup: 1.750 / Efficiency: 87% / LogL: -8684
+Threads: 3 / Time: 12.263 sec / Speedup: 2.288 / Efficiency: 76% / LogL: -8684
+Threads: 4 / Time: 11.343 sec / Speedup: 2.474 / Efficiency: 62% / LogL: -8684
+Threads: 5 / Time: 10.275 sec / Speedup: 2.731 / Efficiency: 55% / LogL: -8684
+Threads: 6 / Time: 9.946 sec / Speedup: 2.822 / Efficiency: 47% / LogL: -8684
+Determining AUTO threadcount: done in 87.9288 secs using 293.8% CPU
+BEST NUMBER OF THREADS: 5
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -7492.580
+Optimal log-likelihood: -7492.511
+Proportion of invariable sites: 0.093
+Gamma shape alpha: 1.302
+Parameters optimization took 1 rounds (0.012 sec)
+Time for fast ML tree search: 0.094 seconds
+
+NOTE: ModelFinder requires 13 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 285 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+Akaike Information Criterion:           Q.PLANT+I+G4
+Corrected Akaike Information Criterion: Q.PLANT+I+G4
+Bayesian Information Criterion:         Q.PLANT+I+G4
+Best-fit model: Q.PLANT+I+G4 chosen according to BIC
+
+All model information printed to LcCIPK_kinase_NAF.model.gz
+CPU time for ModelFinder: 283.980 seconds (0h:4m:43s)
+Wall-clock time for ModelFinder: 92.932 seconds (0h:1m:32s)
+Generating 1000 samples for ultrafast bootstrap (seed: 960794)...
+
+NOTE: 5 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.480 / Estimate: 0.000, 0.808 / LogL: -7454.833
+Init pinv, alpha: 0.020, 1.480 / Estimate: 0.090, 1.130 / LogL: -7451.139
+Init pinv, alpha: 0.040, 1.480 / Estimate: 0.093, 1.144 / LogL: -7451.092
+Init pinv, alpha: 0.060, 1.480 / Estimate: 0.090, 1.131 / LogL: -7451.136
+Init pinv, alpha: 0.080, 1.480 / Estimate: 0.094, 1.148 / LogL: -7451.081
+Init pinv, alpha: 0.099, 1.480 / Estimate: 0.102, 1.189 / LogL: -7451.010
+Init pinv, alpha: 0.119, 1.480 / Estimate: 0.107, 1.215 / LogL: -7451.008
+Init pinv, alpha: 0.139, 1.480 / Estimate: 0.110, 1.232 / LogL: -7451.027
+Init pinv, alpha: 0.159, 1.480 / Estimate: 0.112, 1.243 / LogL: -7451.049
+Init pinv, alpha: 0.179, 1.480 / Estimate: 0.110, 1.234 / LogL: -7451.032
+Optimal pinv,alpha: 0.107, 1.215 / LogL: -7451.008
+
+Parameters optimization took 0.818 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.00806808 secs using 501% CPU
+Computing ML distances took 0.008131 sec (of wall-clock time) 0.040661 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 3.40939e-05 secs using 821.3% CPU
+Constructing RapidNJ tree: done in 0.000377893 secs using 309.9% CPU
+Computing RapidNJ tree took 0.000458 sec (of wall-clock time) 0.001548 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -7468.224
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.178 second
+Computing log-likelihood of 98 initial trees ... 0.368 seconds
+Current best score: -7451.008
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -7443.979
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -7442.663
+Iteration 10 / LogL: -7443.982 / Time: 0h:1m:35s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 12: -7441.189
+Iteration 20 / LogL: -7448.052 / Time: 0h:1m:35s
+Finish initializing candidate tree set (6)
+Current best tree score: -7441.189 / CPU time: 2.087
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -7441.215 / Time: 0h:1m:36s (0h:0m:10s left)
+Iteration 40 / LogL: -7444.002 / Time: 0h:1m:37s (0h:0m:8s left)
+Iteration 50 / LogL: -7441.229 / Time: 0h:1m:38s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -7484.148
+Iteration 60 / LogL: -7444.017 / Time: 0h:1m:38s (0h:0m:5s left)
+Iteration 70 / LogL: -7441.257 / Time: 0h:1m:39s (0h:0m:4s left)
+Iteration 80 / LogL: -7444.001 / Time: 0h:1m:40s (0h:0m:3s left)
+Iteration 90 / LogL: -7441.200 / Time: 0h:1m:41s (0h:0m:2s left)
+Iteration 100 / LogL: -7441.190 / Time: 0h:1m:41s (0h:0m:1s left)
+Log-likelihood cutoff on original alignment: -7484.148
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Iteration 110 / LogL: -7442.737 / Time: 0h:1m:42s (0h:0m:7s left)
+TREE SEARCH COMPLETED AFTER 113 ITERATIONS / Time: 0h:1m:42s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -7441.189
+Optimal log-likelihood: -7441.189
+Proportion of invariable sites: 0.106
+Gamma shape alpha: 1.222
+Parameters optimization took 1 rounds (0.011 sec)
+BEST SCORE FOUND : -7441.189
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.035 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file LcCIPK_kinase_NAF.splits.nex
+Total tree length: 7.978
+
+Total number of iterations: 113
+CPU time used for tree search: 45.101 sec (0h:0m:45s)
+Wall-clock time used for tree search: 9.000 sec (0h:0m:8s)
+Total CPU time used: 333.755 sec (0h:5m:33s)
+Total wall-clock time used: 102.862 sec (0h:1m:42s)
+
+Computing bootstrap consensus tree...
+Reading input file LcCIPK_kinase_NAF.splits.nex...
+27 taxa and 149 splits.
+Consensus tree written to LcCIPK_kinase_NAF.contree
+Reading input trees file LcCIPK_kinase_NAF.contree
+Log-likelihood of consensus tree: -7441.190
+
+Analysis results written to: 
+  IQ-TREE report:                LcCIPK_kinase_NAF.iqtree
+  Maximum-likelihood tree:       LcCIPK_kinase_NAF.treefile
+  Likelihood distances:          LcCIPK_kinase_NAF.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          LcCIPK_kinase_NAF.splits.nex
+  Consensus tree:                LcCIPK_kinase_NAF.contree
+  Screen log file:               LcCIPK_kinase_NAF.log
+
+Date and Time: Thu Sep 24 16:51:56 2026
